@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cube{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+        
+            position: absolute;
+            animation: move 5s ease-in infinite;
+            transition: all 0.1s ease-in;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+        @keyframes move {
+            0%{
+                top: 600px;
+                left: 0;
+            }
+            25%{
+                top: 0;
+                left: 300px;
+            }
+            50%{
+                top: 250px;
+                left: 600px;
+            }
+            75%{
+                top: 0px;
+                left: 1000px;
+            }
+            100%{
+                top: 600px;
+                left: 1400px;
+            }
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="cube"></div>
+</body>
+</html>
